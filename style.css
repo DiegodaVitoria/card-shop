@@ -1,0 +1,130 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+}
+
+:root {
+ --branco-claro: #f6fbfb;
+ --branco-escuro: #bfbfbf;
+ --amarelo: #f9ca1c;
+ --preto: #121212;
+ --branco: #fff
+}
+
+.container {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ width: 270px;
+ height: 500px;
+ box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+ border-radius: 15px;
+ overflow: hidden;
+ 
+}
+
+.image{
+ width: 100%;
+ height: 230px;
+ background:url("./img/pusseira.jpg") center/cover ;
+}
+
+.content{
+ width: 100%;
+ height: 270px;
+ background: var(--branco-claro);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-evenly;
+}
+
+.review{
+ width: 240px;
+ height: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.stars .fa{
+ font-size: .7rem;
+ color: var(--amarelo);
+}
+
+.stars span{
+ font-size: .6rem;
+ padding-right: .3rem;
+ color:  var(--branco-escuro);
+
+}
+
+.review h5{
+ font-size: 1.2rem;
+}
+
+.name,.detail{
+ width: 240px;
+}
+
+.name span{
+ color: rgba(0, 0, 0, 0.2);
+ font-size: .7rem;
+ padding-left: 15px;
+}
+
+.detail p{
+ color: var(--branco-escuro);
+ font-size: .6rem;
+}
+
+.btn-box, .btn{
+ display: flex;
+ align-items: center;
+}
+
+.btn-box{
+ width: 240px;
+ height: 50px;
+ justify-content: space-between;
+}
+
+.btn{
+ width: 160px;
+ height: 50px;
+ background: var(--preto);
+ color: var(--branco);
+ font-size: .8rem;
+ justify-content: space-evenly;
+ border-radius: 15px;
+ box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+ cursor: pointer;
+}
+
+.btn:hover{
+ width: 160px;
+ height: 50px;
+ background: var(--branco);
+ color: var(--preto);
+ font-size: .8rem;
+ box-shadow: 0 10px 20px rgba(5, 63, 208, 0.2);
+}
+
+.cart-icon, .like{
+ width: 35px;
+ height: 35px;
+ border-radius: 50%;
+ text-align: center;
+ line-height: 35px;
+}
+
+
+
+.like{
+ background: #ededed;
+ cursor: pointer;
+}
+
